@@ -13,7 +13,7 @@ export class CountryPageComponent implements OnInit {
     private CountriesService: CountriesService
   ) {}
 
-  //Observable dentro de otro Observable
+  //Observable dentro de otro Observables
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(({ id }) => {
       this.CountriesService.searchCountryByAlphaCode(id).subscribe(
